@@ -48,9 +48,11 @@ The key value of the array is what is displayed to admins/clients on the button 
 
 If you want to provide clients with a custom button or way to invoke a function, then this can be done as follows within a .tpl file described in the previous Client Area Output section:
 
+```
  <form method="post" action="clientarea.php?action=domaindetails">
  <input type="hidden" name="domainid" value="{$domainid}" />
  <input type="hidden" name="modop" value="custom" />
- <input type="hidden" name="a" value="reboot" />
- <input type="submit" value="Reboot VPS Server" />
+ <input type="hidden" name="a" value="push" />
+ <input type="submit" value="Push Domain" />
  </form>
+ ```
